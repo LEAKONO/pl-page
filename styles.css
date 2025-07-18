@@ -1,181 +1,41 @@
-
-  body {
-        font-family: Arial, sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-    }
-    header {
-        background: #35424a;
-        color: #ffffff;
-        padding: 20px 0;
-        text-align: center;
-    }
-    header h1 {
-        margin: 0;
-        font-size: 2.5em;
-    }
-    header p {
-        font-size: 1.2em;
-    }
-    nav {
+body {
+  font-family: Arial, sans-serif;
+  background: #f0f2f5;
   display: flex;
-  justify-content: center; /* centers all <a> links horizontally */
-  align-items: center;
-  gap: 20px;
-  padding: 10px 0;
-  background-color: #fff; /* optional */
+  justify-content: center;
+  padding: 40px;
 }
-    nav a:hover {
-        background: #e2e2e2;
-        color: #35424a;
-        border-radius: 4px;
-    }
-    nav a.active {
-        background: #35424a;
-        color: #ffffff;
-    }
-    nav a:focus {
-        outline: 2px solid #35424a;
-        outline-offset: 2px;
-    }
-   nav a {
-       display: inline-flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: row;
-        color: #8a5353;
-        text-decoration: none;
-        padding: 10px 15px;
-        transition: background 0.3s ease;
-    }
-   
-    section {
-        padding: 20px;
-        margin: 20px auto;
-        max-width: 800px;
-        background: #ffffff;        
-        border-radius: 8px;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    section h2 {
-        color: #35424a;
-        font-size: 1.8em;
-        margin-bottom: 10px;
-    }
-    section p {
-        font-size: 1.1em;
-        color: #333;
-    }
-    section ul {
-        list-style-type: none;
-        padding: 0;
-    }
-    section ul li {
-        background: #e2e2e2;
-        margin: 5px 0;
-        padding: 10px;
-        border-radius: 4px;
-    }
-    section form {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-    }
-    section form label {
-        font-weight: bold;
-    }
-    section form input[type="text"],
-    section form input[type="email"],
-    section form textarea {
-        padding: 10px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        width: 100%;
-    }
-    section form button {
-        padding: 10px;
-        background: #35424a;
-        color: #ffffff;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    section form button:hover {
-        background: #2c3e50;
-    }
-    footer {
-        text-align: center;
-        padding: 20px 0;
-        background: #35424a;
-        color: #ffffff; 
-        position: relative;
-        bottom: 0;
-        width: 100%;
-    }
-    footer p {
-        margin: 0;
-        font-size: 0.9em;
-    }
-    footer a {
-        color: #ffffff;
-        text-decoration: none;
-    }
-    footer a:hover {
-        text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-        section {
-            padding: 15px;
-        }
-        section h2 {
-            font-size: 1.5em;
-        }
-        section p {
-            font-size: 1em;
-        }
-        section form input[type="text"],
-        section form input[type="email"],
-        section form textarea {
-            font-size: 0.9em;
-        }
-        section form button {
-            font-size: 0.9em;
-        }
-        footer p {
-            font-size: 0.8em;   
-        }
-    }
-    @media (min-width: 601px) and (max-width: 1024px) {
-        section {
-            padding: 20px;
-        }
-        section h2 {    
-            font-size: 1.7em;
-        }
-        section p {
-            font-size: 1.1em;
-        }
-        section form input[type="text"],
-        section form input[type="email"],
-        section form textarea {
-            font-size: 1em;
-        }
-        section form button {
-            font-size: 1em;
-        }
-        footer p {
-            font-size: 0.9em;   
-        }
-    }
-    @media (min-width: 1025px) {
-        section {
-            padding: 30px;
-        }
-        section h2 {
-            font-size: 2em;
-        }
-        section p {   
-            font-size: 1.2em;
-        }       
+
+.container {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+#todo-form {
+  display: flex;
+  gap: 10px;
+}
+
+#todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+#todo-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  background: #e7f0fa;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+}
